@@ -1,0 +1,256 @@
+#main-header{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 95%;
+    margin: auto;
+}
+.left-header{
+    margin-top: 4%;
+    /* margin-right: 8%; */
+}
+.left-header p{
+
+    font-size: smaller;
+    margin-left: 5px;
+}
+#main-header img{
+    margin-left:2%;
+    margin-top: 55%;
+    position: relative;
+}
+.details{
+    position: absolute;
+    z-index: 1;
+
+}
+
+
+.right-header{
+    display: flex;
+    margin: 30px;
+}
+/* .right-header span{
+    margin:30px;
+
+} */
+.right-header li{
+    margin-top: 20px;
+    list-style: none;
+   padding-left: 5px;
+   margin-right: 30px;
+   
+}
+#header__searchIcon, 
+.header__cameraIcon {
+   
+    color: rgb(58, 55, 55);
+    position: absolute;
+    margin-top: 8px;
+}
+#header__searchIcon {
+    margin-left: 15px;
+    margin-top: 52px;
+   
+}
+.header__cameraIcon {
+    /* justify-content: flex-start !important; */
+    margin-left: 540px !important;
+}
+
+.header__search {
+    justify-content: space-between;
+    display: flex;
+    flex: .6;
+    margin-top: 14px;
+    position: relative;
+    z-index: 9;
+    
+}
+.header2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.header2 >li{
+    position:absolute;
+    background-color: rgb(236, 245, 245);
+    list-style: none;
+    color: black;
+    padding: 10px;
+    /* display: none; */
+  
+}
+.header2 >li:hover{
+    background-color: rgb(246, 242, 237);
+    font-size: large;
+}
+.header__searchInput {
+    margin-top: 40px;
+    height: 20px;
+    padding: 24px;
+    width: 750px;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    background-color: #F2F3F4;
+    padding-left: 42px;
+    font-size: 16px;
+    
+}
+
+.login-icon{
+   display: flex;
+   font-weight: 500;
+   align-items: center;
+   padding: 8px;
+   padding-bottom: -100px;
+   
+
+}
+
+.login-icon:hover{
+    background-color: rgb(195, 190, 190);
+    border-radius: 30px;
+    padding: 7px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+    
+}
+.cart-icon span{
+    margin-top: 16px;
+}
+.cart-icon{
+    padding: 4px;
+}
+.cart-icon:hover{
+    /* background-color: rgb(195, 190, 190); */
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#category{
+    display: flex;
+    margin-left: 10%;
+    margin-top: -60px;
+ 
+   
+}
+
+
+#category li{
+    list-style: none;
+    margin: 10px;
+    font-weight: bolder;
+   position: relative;
+    
+    
+}
+#bodyHover :hover{
+text-decoration: underline;
+    cursor: pointer;
+}
+#loggin{
+    display:flex;
+    justify-content: space-between;
+    
+}
+#loggin button{
+    border-radius: 20px;
+
+}
+#offcanvasRight{
+    background-color:#0058a3;
+    color: white;
+}
+#ikeaFamily{
+    display: flex;
+    justify-content: space-between;
+}
+#category li:hover{
+    text-decoration: underline;
+    
+
+}
+.btnLogin{
+    /* margin-top:px; */
+    border: none;
+    background-color: white;
+}
+.header__searchInput:hover + .header2{
+    display: block;
+    background-color: #0058a3;
+
+}
+.final-Data li{
+    list-style: none;
+    background-color: #eef2f6;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+ 
+    position: relative;
+    /* position: absolute; */
+
+}
+.final-Data{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+.final-Data li:hover{
+    font-weight: bolder ;
+}
+
+
+@media screen and (max-width:1450px) {
+    .header__searchInput {
+      width: 500px;
+    }
+    .login-icon{
+        font-size: xx-small;
+    }
+  }
+  @media screen and (max-width:1450px) {
+    
+    /* .hej{
+        display: none;
+    } */
+       
+  }
+  @media screen and (max-width:700px) {
+    
+    #main-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__searchInput {
+        width: 200px;
+      }
+       
+
+      .left-header{
+        margin-top: 50px;
+      }
+      #main-header img{
+        margin-right: 10px;
+      }
+
+
+  }
+
+  @media screen and (max-width:600px) {
+    
+   .cart-icon{
+    display: none;
+   }
+
+
+  }
