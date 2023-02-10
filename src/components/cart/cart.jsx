@@ -42,13 +42,17 @@ function Cart() {
             .then((response) => {
                 // console.log(response.data.items)
                 let items = response.data.items
+                console.log(response)
                 items = items.filter((elem) => {
-                    // console.log(elem._id, elem.user.user_id)
-                    return user.id == elem.user.user_id
+                    console.log(user.id, elem.user.user_id)
+                    if(elem.user.user_id !== null || elem.user.user_id != undefined){
+                        return user.id == elem.user.user_id
+                    }
                 })
                 setCartItems(items)
             })
     }, [user])
+    console.log(cartItems)
 
     function changeQuantity(value, id) {
         let obj = {
