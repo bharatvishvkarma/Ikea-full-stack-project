@@ -123,9 +123,10 @@ export default function Navbar() {
           <p>Menu</p>
         </div>
 
-        <div className="image_logo">
+        <div style={{marginBottom:"20px"}} className="image_logo">
 
           <img
+            
             onClick={()=>{navigate("/")}}
             src="https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg"
             alt=""
