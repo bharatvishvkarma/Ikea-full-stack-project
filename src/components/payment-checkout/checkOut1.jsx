@@ -23,6 +23,7 @@ function Checkout1() {
             let items = response.data.items
             items = items.filter((elem) => {
                 // console.log(elem._id, elem.user.user_id)
+                if(elem.user)
                 return user.id == elem.user.user_id
             })
             setCartItems(items)

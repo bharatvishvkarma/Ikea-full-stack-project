@@ -24,6 +24,7 @@ export default function Checkout() {
         let items = response.data.items
         items = items.filter((elem) => {
           // console.log(elem._id, elem.user.user_id)
+          if(elem.user)
           return user.id == elem.user.user_id
         })
         let tota = 0;
