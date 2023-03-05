@@ -108,7 +108,7 @@
    align-items: center;
    padding: 8px;
    padding-bottom: -100px;
-   
+   /* min-width: 80px; */
 
 }
 
@@ -261,6 +261,9 @@ text-decoration: underline;
    /* .cart-icon{
     display: none;
    } */
+   #local_shipping123{
+    display: none;
+   }
 
 
   }

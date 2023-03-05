@@ -171,7 +171,7 @@ export default function Navbar() {
           >
             {" "}
             <li className="login-icon">
-              <span class="material-symbols-outlined"> person</span> <span style={{fontWeight:"bolder"}} className="hej">{isAuth.isAuth?isAuth.login.name.toUpperCase():"Hej! Log in or sign up"}</span>
+              <span class="material-symbols-outlined"> person</span> <span style={{fontWeight:"bolder"}} className="hej">{isAuth.isAuth?isAuth.login.name.toUpperCase():"Hej! Log in"}</span>
             </li>
           </button>
 
@@ -207,7 +207,7 @@ export default function Navbar() {
               <hr />
             </div>
           </div>
-          <li className="cart-icon">
+          <li id="local_shipping123" className="cart-icon">
             {" "}
             <span class="material-symbols-outlined">local_shipping</span>
           </li>
