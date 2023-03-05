@@ -44,8 +44,8 @@ function Cart() {
                 let items = response.data.items
                 console.log(response)
                 items = items.filter((elem) => {
-                    console.log(user.id, elem.user.user_id)
-                    if(elem.user.user_id !== null || elem.user.user_id != undefined){
+                    // console.log(user.id, elem.user.user_id)
+                    if(elem.user){
                         return user.id == elem.user.user_id
                     }
                 })
