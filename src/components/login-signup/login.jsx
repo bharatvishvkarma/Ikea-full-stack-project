@@ -98,7 +98,7 @@ function Login(props) {
         </div>
         <div id="loginRightSection" className={styles.rightDiv}>
           <form onSubmit={handleSubmit}>
-            <label>Email or Verified Mobile Number</label>
+            <label>Email</label>
             <br />
             <input type="email" name="email" onChange={handleChange} required />
             <br />
