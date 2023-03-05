@@ -100,7 +100,7 @@ export default function Navbar() {
                 paddingLeft: "50px"
               }}
             >
-              <h2>Products</h2>
+              <h2 onClick={()=>{navigate("/products")}}>Products</h2>
               <h2>Rooms</h2>
               <h2>New at IKEA</h2>
               <h2>Offers</h2>
