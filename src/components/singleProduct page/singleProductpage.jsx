@@ -110,7 +110,7 @@ console.log(availability);
                                         <FaStar />
                                         <FaStar />
                                         <FaStar />
-                                        <FaStar />
+                                        <FaStar /> 
                                         <FaStarHalf />
                                     </p>
                                     <p style={{ fontSize: "13px" }}>(142)</p>

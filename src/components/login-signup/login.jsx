@@ -52,7 +52,7 @@ function Login(props) {
   return (
     <>{isAuth ? <Navigate to={`${localStorage.getItem("path")}`} /> :
       <div className={styles.container}>
-        <div className={styles.leftDiv}>
+        <div id="loginLeftSection" className={styles.leftDiv}>
           <div>
             <Link to="/">
               <button
@@ -96,7 +96,7 @@ function Login(props) {
             <p>© Inter IKEA Systems B.V. 1999-2023</p>
           </div>
         </div>
-        <div className={styles.rightDiv}>
+        <div id="loginRightSection" className={styles.rightDiv}>
           <form onSubmit={handleSubmit}>
             <label>Email or Verified Mobile Number</label>
             <br />

@@ -225,6 +225,9 @@ text-decoration: underline;
     .header__searchInput {
         width: 200px;
       }
+      #signupLeftSection img{
+        width: 190px;
+      }
        
   }
   @media screen and (max-width:760px) {
@@ -261,3 +264,13 @@ text-decoration: underline;
 
 
   }
+
+  @media screen and (max-width:800px) {
+    #loginLeftSection,#signupLeftSection{
+        display: none;
+    }
+    #loginRightSection,#signupRightSection{
+        width: 90%;
+        margin: auto;
+    }
+}

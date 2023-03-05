@@ -60,7 +60,7 @@ function Signup(props) {
   // },[form])
   return (
     <div className={styles.container}>
-      <div className={styles.leftDiv}>
+      <div id="signupLeftSection" className={styles.leftDiv}>
         <div>
           <h1>
             Create an{" "}
@@ -121,7 +121,7 @@ function Signup(props) {
           </div>
         </div>
       </div>
-      <div className={styles.rightDiv}>
+      <div id="signupRightSection" className={styles.rightDiv}>
         <div>
           <h3>
             Become a member of IKEA Family today. Did we mention it's free to
