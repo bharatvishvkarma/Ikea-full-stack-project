@@ -62,6 +62,7 @@ function Cart() {
         .then((response) => {
             let items = response.data.items
             items = items.filter((elem) => {
+                if(elem.user)
                 return user.id == elem.user.user_id
             })
             setCartItems(items)
@@ -73,6 +74,7 @@ function Cart() {
         .then((response)=>{
             let items = response.data.items
             items = items.filter((elem) => {
+                if(elem.user)
                 return user.id == elem.user.user_id
             })
             setCartItems(items)
